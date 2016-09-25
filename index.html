@@ -5,12 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Nerds</title>
 </head>
 <body>
     <header class="main-header">
         <div class="container">
-            <div class="top-header">
+            <div class="top-header clearfix">
                 <img src="img/logo.png" alt="Nerds" width="138" height="55">
                 <nav class="main-menu">
                     <ul>
@@ -24,15 +26,15 @@
                     <p><a href="">Корзина</a></p>
                 </div>
             </div>
-            <div class="slider">
+            <div class="slider clearfix">
                 <div class="slider-left-side">
-                    <h1>Долго, дорого, скрупулёзно.</h1>
-                    <p>Математически выверенный дизайн
+                    <h1>Долго, дорого,<br> скрупулёзно.</h1>
+                    <p>Математически выверенный дизайн <br>
                         для вашего сайта или мобильного приложения.</p>
                     <a href="" class="btn">Узнать больше</a>
                 </div>
                 <div class="slider-right-side">
-                    <img src="img/photo.jpg" alt="">
+                    <img src="img/photo.jpg" alt="" width="333" height="319">
                 </div>
                 <ul class="slider-buttons">
                     <li>1</li>
@@ -43,7 +45,7 @@
         </div>
     </header>
     <main class="container">
-        <section class="services">
+        <section class="services clearfix">
             <div class="service-item">
                 <img src="img/service1.jpg" alt="service1" width="240" height="124">
                 <h3>Веб-сайты</h3>
@@ -67,7 +69,8 @@
                 <a href="" class="btn service3">Заказать</a>
             </div>
         </section>
-        <section class="about-company">
+        <hr>
+        <section class="about-company clearfix">
             <div class="left">
                 <h2>Мы — маленькая, но гордая
                     дизайн-студия из Краснодара. </h2>
@@ -82,7 +85,7 @@
                 </ul>
             </div>
             <div class="right">
-                <img src="img/nerds.png" alt="nerds">
+                <img src="img/nerds.png" alt="nerds" width="190" height="76">
                 <span>Since 2004</span>
                 <h4>КАК Мы работаем:</h4>
                 <ul>
@@ -92,29 +95,37 @@
                 </ul>
             </div>
         </section>
+        <hr>
         <section class="companies">
             <img src="img/company1.png" alt="company1">
             <img src="img/company2.png" alt="company2">
             <img src="img/company3.png" alt="company3">
         </section>
+        <hr>
     </main>
     <div class="map">
-        <div class="contacts">
-            <h4>NЁRDS DESIGN STUDIO</h4>
-            <p>191186, Санкт-Петербург,
-                ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <button class="btn">Напишите нам</button>
+        <div class="container">
+            <div class="contacts">
+                <h4>NЁRDS DESIGN STUDIO</h4>
+                <p>191186, Санкт-Петербург,
+                    ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <button class="btn">Напишите нам</button>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="socials">
-            <img src="vk.png" alt="vk">
-            <img src="facebook.png" alt="facebook">
-            <img src="inst.png" alt="inst">
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <ul class="socials">
+                <li><a href="" class="social-btn vk">v</a></li>
+                <li><a href="" class="social-btn facebook">f</a></li>
+                <li><a href="" class="social-btn inst">i</a></li>
+            </ul>
+            <div class="promo">
+                <h2>Давайте дружить, это выгодно!</h2>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
 </body>
 </html>
