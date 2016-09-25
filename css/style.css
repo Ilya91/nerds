@@ -1,0 +1,125 @@
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header.main-header{
+    background-color: #EEEEEE;
+    margin-bottom: 80px;
+}
+.container{
+    width: 880px;
+    padding: 0 10px;
+    margin:0 auto;
+}
+.top-header{
+    margin-bottom: 40px;
+}
+.top-header img{
+    float: left;
+    margin-right: 180px;
+}
+.main-menu{
+    float: left;
+}
+.main-menu ul li{
+    float: left;
+    margin-left: 40px;
+}
+.busket{
+    float: right;
+}
+.slider-left-side{
+    float: left;
+    width: 470px;
+}
+.slider-right-side{
+    float: right;
+    width: 410px;
+    text-align: right;
+}
+.slider-left-side p{
+    margin-bottom:32px;
+}
+.slider-right-side img{
+    display: block;
+    float: right;
+}
+.slider-buttons{
+    position: relative;
+    /*left: 405px;*/
+    /*top: -20px;*/
+}
+.slider-buttons li{
+    float: left;
+    margin-right: 5px;
+}
+
+.service-item{
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+}
+.service-item:last-child{
+    margin-right: 0;
+}
+.services{
+    margin-bottom: 80px;
+}
+
+.about-company{
+    margin-top: 70px;
+    margin-bottom: 75px;
+}
+.about-company .left{
+    float: left;
+    width: 585px;
+}
+.about-company .left p{
+    margin-bottom: 45px;
+}
+.about-company .right{
+     float: right;
+     width: 240px;
+ }
+.about-company .right img{
+    display: block;
+}
+.about-company .right h4{
+    margin-top: 70px;
+}
+.companies{
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.companies img{
+    margin-right: 120px;
+}
+.map{
+    height: 416px;
+    background-color: #F1EFE8;
+    margin-top: 85px;
+    padding-top: 1px;
+}
+.contacts{
+    margin-top: 87px;
+}
+.main-footer{
+    padding: 75px 0;
+}
+.socials{
+    float: left;
+}
+.socials li{
+    float: left;
+    margin-right: 28px;
+}
+.socials li a{
+    display: block;
+    width: 61px;
+    height: 61px;
+}
+.promo{
+    float: left;
+    margin-left:78px;
+}
