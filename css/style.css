@@ -7,13 +7,18 @@ header.main-header{
     background-color: #EEEEEE;
     margin-bottom: 80px;
 }
+.main-header{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
 .container{
     width: 880px;
     padding: 0 10px;
     margin:0 auto;
 }
 .top-header{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: 27px;
 }
 .top-header img{
     float: left;
@@ -122,4 +127,75 @@ header.main-header{
 .promo{
     float: left;
     margin-left:78px;
+}
+
+/*SHOP*/
+.main-header h2{
+    text-align: center;
+    margin-bottom: 90px;
+    padding-top: 20px;
+}
+.filtr{
+    float: left;
+    width: 240px;
+}
+.filtr legend{
+    margin-bottom: 20px;
+}
+.filtr fieldset{
+    border: none;
+}
+.filtr ul{
+    margin-bottom: 50px;
+}
+.portfolio{
+    float: right;
+    width: 560px;
+}
+.sort-panel{
+    margin-bottom: 25px;
+}
+.sort-title{
+    float: left;
+    margin-right: 35px;
+    margin-top:0;
+}
+.top-down{
+    float: right;
+}
+.sort-panel ul{
+    float: left;
+}
+.sort-panel ul li{
+    float: left;
+    margin-right: 45px;
+}
+.portfolio-item{
+    float: left;
+    width: 240px;
+    position: relative;
+    margin-bottom: 80px;
+}
+.portfolio-item:nth-child(2n){
+    float: right;
+}
+.portfolio-item:hover .overlay{
+    display: block;
+}
+.overlay{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    padding: 35px 30px 30px 30px;
+}
+.overlay h3{
+    margin-bottom:15px;
+}
+.overlay p{
+    margin-bottom:30px;
+}
+ul.pagination li{
+    float: left;
+    margin-left: 10px;
 }
