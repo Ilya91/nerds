@@ -1,3 +1,10 @@
+@font-face {
+    font-family: symbols-nerds;
+    src: url("../font/symbols-nerds.eot?27841936");
+    src: url("../font/symbols-nerds.eot?27841936#iefix") format("embedded-opentype"), url("../font/symbols-nerds.woff?27841936") format("woff"), url("../font/symbols-nerds.ttf?27841936") format("truetype"), url("../font/symbols-nerds.svg?27841936#symbols-nerds") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 .clearfix::after{
     content: "";
     display: table;
@@ -22,17 +29,67 @@ header.main-header{
 }
 .top-header img{
     float: left;
-    margin-right: 180px;
 }
 .main-menu{
-    float: left;
-}
-.main-menu ul li{
-    float: left;
-    margin-left: 40px;
-}
-.busket{
     float: right;
+    margin-top:30px;
+}
+.main-menu ul{
+    margin:0;
+    list-style: none;
+}
+.main-menu li{
+    float: left;
+    margin-left: 45px;
+    line-height:14px;
+    padding-bottom:5px;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size:14px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:500;
+}
+.main-menu ul li a:hover{
+    color: #fb565a;
+}
+.main-menu ul li a:active{
+    color: #000;
+    opacity:.4;
+}
+li.busket{
+    margin-left:65px;
+}
+.busket a{
+    padding-left:25px;
+    position: relative;
+}
+.busket a:hover::before{
+    color: #fb565a;
+}
+.active{
+    border-bottom: 2px solid #fb565a;
+}
+.busket a::before{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-family: symbols-nerds;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: inherit;
+    width: 14px;
+    margin-right: 0;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\62";
+    color: #bcbcbc;
 }
 .slider-left-side{
     float: left;
