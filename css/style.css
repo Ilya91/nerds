@@ -24,10 +24,14 @@ body{
     border: none;
     outline: none;
 }
+.btn:hover{
+    background-color: #d6494d;
+}
 .btn:active{
     -webkit-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+    background-color: #b63538;
 }
 .clearfix::after{
     content: "";
@@ -181,9 +185,52 @@ li.busket{
 .services{
     margin-bottom: 80px;
 }
-
+.service-item img{
+    display: block;
+    margin-bottom:20px;
+}
+.service-item b{
+    font-weight:500;
+    text-transform: uppercase;
+    font-size:18px;
+    display: inline-block;
+    margin-bottom:16px;
+    line-height:30px;
+}
+.service-item p{
+    font-size:15px;
+    line-height:22px;
+    color: #283136;
+    margin-bottom:27px;
+    margin-top:0;
+}
+.service2{
+    background-color: #00ca74;
+}
+.service2:hover{
+    background-color: #01a25e;
+}
+.service2:active{
+    background-color: #009053;
+}
+.service3{
+     background-color: #efc84a;
+ }
+.service3:hover{
+    background-color: #d6ae2c;
+}
+.service3:active{
+    background-color: #c09b24;
+}
+hr.divide{
+    margin:0;
+    padding:0;
+    height:2px;
+    background-color: #eeeeee;
+    border: none;
+}
 .about-company{
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 75px;
 }
 .about-company .left{
@@ -309,3 +356,4 @@ ul.pagination li{
     float: left;
     margin-left: 10px;
 }
+
