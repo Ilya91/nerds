@@ -229,26 +229,92 @@ hr.divide{
     background-color: #eeeeee;
     border: none;
 }
-.about-company{
+.about-us{
     margin-top: 60px;
     margin-bottom: 75px;
 }
-.about-company .left{
+.left-about-us{
     float: left;
     width: 585px;
 }
-.about-company .left p{
-    margin-bottom: 45px;
+.right-about-us{
+    float: right;
+    width: 240px;
 }
-.about-company .right{
-     float: right;
-     width: 240px;
- }
-.about-company .right img{
+.about-company{
+    margin-bottom:44px;
+}
+.about-company .right-about-us{
+    text-align: center;
+}
+.about-company .right-about-us img{
+    display: inline-block;
+    margin-bottom:30px;
+}
+.since{
+    text-align: center;
+}
+.since span{
+    font-size:16px;
+    line-height:16px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    background-color: #fff;
+    z-index:2;
+    padding:0 15px;
+}
+.since::after{
+    content: "";
+    position: relative;
+    border-bottom: 2px solid #eeeeee;
+    top:-11px;
+    z-index:1;
     display: block;
 }
-.about-company .right h4{
-    margin-top: 70px;
+.about-us h2{
+    margin:0;
+    font-size:36px;
+    line-height:36px;
+    font-weight:500;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.about-us p{
+    font-size:16px;
+    line-height:22px;
+    color: #283136;
+    margin:0;
+}
+.about-us h4{
+    margin:0;
+    font-size:16px;
+    line-height:22px;
+    color: #283136;
+    text-transform: uppercase;
+    margin-bottom:8px;
+}
+.about-our-work ul{
+    font-size:16px;
+    line-height:50px;
+    color: #283136;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.about-our-work ul li{
+    padding-left:35px;
+    position: relative;
+}
+.about-our-work ul li::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height:2px;
+    background-color: #fb565a;
+
+    left:0;
+    top:25px;
 }
 .companies{
     margin-bottom: 35px;
