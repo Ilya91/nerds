@@ -507,19 +507,76 @@ hr.divide{
     text-align: center;
     margin-bottom: 90px;
     padding-top: 20px;
+    font-weight:500;
+    font-size:40px;
 }
 .filtr{
     float: left;
     width: 240px;
 }
+.filtr ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
 .filtr legend{
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight:600;
+    text-transform: uppercase;
+    line-height:30px;
+    font-size:18px;
+}
+.filtr-range{
+    width: 100%;
+    height:80px;
+    background-color: #f1f1f1;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
 }
 .filtr fieldset{
     border: none;
+    margin:0;
+    padding:0;
+}
+.filtr-price input{
+    width: 50px;
+    height:38px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius:5px;
+    margin-left:10px;
+    padding: 0 15px;
+    text-align: center;
+}
+.filtr label, .filtr-price input{
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight:500;
+    line-height:22px;
+    font-size:16px;
+    color: #283136;
+}
+.filtr-price label{
+    text-transform: uppercase;
+}
+.filtr .radio-button, .filtr .checkbox{
+    display: none;
+}
+.filtr-grid label, .filtr-features label{
+    padding-left: 34px;
+}
+.price-from{
+     float: left;
+ }
+.price-to{
+    float:right;
 }
 .filtr ul{
-    margin-bottom: 50px;
+    margin-bottom: 44px;
+}
+.filtr ul li{
+    margin-bottom: 15px;
 }
 .portfolio{
     float: right;
