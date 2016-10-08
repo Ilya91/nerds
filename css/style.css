@@ -120,7 +120,15 @@ li.busket{
 }
 .slider{
     position: relative;
-    width: 880px;
+    overflow: hidden;
+}
+.slider-container {
+    width: 300%;
+}
+.slider-item {
+    float: left;
+    min-height: 310px;
+    min-width: 880px;
 }
 .slider-left-side{
     float: left;
@@ -160,19 +168,11 @@ li.busket{
     display: block;
     float: right;
 }
-.slider-controls{
-    margin:0;
-    position: absolute;
-    left:50%;
-    top:195px;
-    padding:0;
-    list-style: none;
-    margin-left:-28px;
-}
-.slider-controls input[type="radio"]{
+
+.slider input[type="radio"]{
     display: none;
 }
-.slider-controls label{
+.slider label{
     display: inline-block;
     width: 10px;
     height:10px;
@@ -183,12 +183,16 @@ li.busket{
     position: absolute;
     z-index: 10;
     cursor: pointer;
+    top:197px;
 }
-.slider-controls label[for="slider-controlls-math"]{
-    left:18px;
+.slider label[for="slider-controlls-design"]{
+    left:406px;
 }
-.slider-controls label[for="slider-controlls-drugs"]{
-    left:36px;
+.slider label[for="slider-controlls-math"]{
+    left:425px;
+}
+.slider label[for="slider-controlls-drugs"]{
+    left:444px;
 }
 .slider-controlls-design:checked ~ label[for="slider-controlls-design"]::before,
 .slider-controlls-math:checked ~ label[for="slider-controlls-math"]::before,
@@ -202,6 +206,20 @@ li.busket{
     border-radius:50%;
     left:3px;
     top:3px;
+}
+.slider-controlls-design:checked ~ .slider-container {
+    transform: translate(0);
+}
+.slider-controlls-math:checked ~ .slider-container {
+    transform: translate(-880px);
+}
+
+.slider-controlls-drugs:checked ~ .slider-container {
+    transform: translate(-1760px);
+}
+
+.slider-container {
+    transition: transform .8s ease;
 }
 .service-item{
     float: left;
