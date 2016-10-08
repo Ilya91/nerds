@@ -169,11 +169,40 @@ li.busket{
     list-style: none;
     margin-left:-28px;
 }
-.slider-controls li{
-    float: left;
-    margin-right: 5px;
+.slider-controls input[type="radio"]{
+    display: none;
 }
-
+.slider-controls label{
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    background-color: #fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+.slider-controls label[for="slider-controlls-math"]{
+    left:18px;
+}
+.slider-controls label[for="slider-controlls-drugs"]{
+    left:36px;
+}
+.slider-controlls-design:checked ~ label[for="slider-controlls-design"]::before,
+.slider-controlls-math:checked ~ label[for="slider-controlls-math"]::before,
+.slider-controlls-drugs:checked ~ label[for="slider-controlls-drugs"]::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height:4px;
+    z-index: 100;
+    background-color: #c1c1c1;
+    border-radius:50%;
+    left:3px;
+    top:3px;
+}
 .service-item{
     float: left;
     width: 240px;
