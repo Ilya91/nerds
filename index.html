@@ -80,7 +80,9 @@
                 </div>
                 <div class="right-about-us">
                     <img src="img/main-header-logo.png" alt="nerds" width="187" height="75">
-                    <span>Since 2004</span>
+                    <div class="since">
+                        <span>Since 2004</span>
+                    </div>
                 </div>
             </div>
             <div class="about-our-work  clearfix">
@@ -102,31 +104,39 @@
                 </div>
             </div>
         </section>
-        <hr>
+        <hr class="divide">
         <section class="companies">
-            <img src="img/company1.png" alt="company1">
-            <img src="img/company2.png" alt="company2">
-            <img src="img/company3.png" alt="company3">
+            <figure class="brand-item">
+                <img src="img/brand-glukhanko.png" alt="company1">
+            </figure>
+            <figure class="brand-item">
+                <img src="img/brand-academy.png" alt="company2">
+            </figure>
+            <figure class="brand-item">
+                <img src="img/brand-borodinski.png" alt="company3">
+            </figure>
         </section>
-        <hr>
+        <hr class="divide">
     </main>
-    <div class="map">
-        <div class="container">
-            <div class="contacts">
-                <h4>NЁRDS DESIGN STUDIO</h4>
-                <p>191186, Санкт-Петербург,
+    <div class="map-section">
+        <div id="map"></div>
+        <div class="container clearfix">
+            <div class="map-block">
+                <h3 class="map-block-title">Nerds design studio</h3>
+                <p class="map-block-info">191186, Санкт-Петербург, <br>
                     ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <button class="btn">Напишите нам</button>
+                <p class="map-block-info">тел. +7 (861) 275-75-75</p>
+                <a href="feedback.html" class="btn map-btn">Напишите нам</a>
             </div>
         </div>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.32089461608198!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1475867131761" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>-->
     </div>
     <footer class="main-footer">
         <div class="container clearfix">
             <ul class="socials">
-                <li><a href="" class="social-btn vk">v</a></li>
-                <li><a href="" class="social-btn facebook">f</a></li>
-                <li><a href="" class="social-btn inst">i</a></li>
+                <li><a href="" class="social-btn vk"></a></li>
+                <li><a href="" class="social-btn facebook"></a></li>
+                <li><a href="" class="social-btn inst"></a></li>
             </ul>
             <div class="promo">
                 <h2>Давайте дружить, это выгодно!</h2>
@@ -134,5 +144,52 @@
             </div>
         </div>
     </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb_NxbNI4QPX0qXQ6OO_Sw1TaYnDtfxxI&callback=initialize">
+    </script>
+    <script src="js/script.js"></script>
+    <!--<script>
+        // initMap() - функция инициализации карты
+        function initMap() {
+            // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
+            var centerLatLng = new google.maps.LatLng(59.9387942, 30.3208946);
+
+
+            var contentString = '<div id="content">Тут всё то про что должно быть рассказано</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            // Обязательные опции с которыми будет проинициализированна карта
+            var mapOptions = {
+                center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
+                zoom: 17               // Зум по умолчанию. Возможные значения от 0 до 21
+            };
+
+            // Создаем карту внутри элемента #map
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            // Create a marker and set its position.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: centerLatLng,
+                title: 'ул. Б. Конюшенная, д. 19/8'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+            });
+
+            this.toggleBounceMarker = function()
+            {
+                if (_this.setMarker.getAnimation() != null) {
+                    _this.setMarker.setAnimation(null);
+                } else {
+                    _this.setMarker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+        }
+
+        // Ждем полной загрузки страницы, после этого запускаем initMap()
+        google.maps.event.addDomListener(window, "load", initMap);
+
+    </script>-->
 </body>
 </html>
