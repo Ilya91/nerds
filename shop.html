@@ -68,17 +68,17 @@
                         <li><input type="checkbox" name="gallery" class="checkbox" id="gallery">
                         <label for="gallery">Галерея</label></li>
 
-                        <li><input type="checkbox" name="basket" class="checkbox" id="basket">
+                        <li><input type="checkbox" name="basket" class="checkbox" id="basket" disabled>
                         <label for="basket">Корзина</label></li>
                     </ul>
             </fieldset>
-            <button  class="btn">Показать</button>
+            <button type="submit" class="btn show-filtr">Показать</button>
                 </form>
         </aside>
         <div class="portfolio">
             <div class="sort-panel clearfix">
-                <p class="sort-title">Сортировать:</p>
-                <ul>
+                <span class="sort-title">Сортировать:</span>
+                <ul class="sort-option">
                     <li><a href="">По цене</a></li>
                     <li><a href="">По типу</a></li>
                     <li><a href="">По функционалу</a></li>
@@ -87,9 +87,9 @@
                         <a href="" class="dow"></a>
                     </li>
                 </ul>
-                <div class="top-down">
-                    <span class="up"></span>
-                    <span class="down"></span>
+                <div class="catalog-arrow-block">
+                    <span class="catalog-arrow-down catalog-arrow-active"></span>
+                    <span class="catalog-arrow-up"></span>
                 </div>
             </div>
             <div class="works clearfix">
