@@ -565,6 +565,57 @@ hr.divide{
 }
 .filtr-grid label, .filtr-features label{
     padding-left: 34px;
+    position: relative;
+}
+.filtr-grid label::before, .filtr-features label::before{
+    position: absolute;
+    left:0;
+    top: 0;
+    font-family: symbols-nerds;
+    font-size:27px;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    color: #c1c1c1;
+}
+.filtr-grid label::before{
+    content: '\25cb';
+}
+.filtr-features label::before{
+    content: "\2610";
+}
+.radio-button:checked + label::before{
+    content: "\25cf";
+}
+.checkbox:checked + label::before{
+    content: "\2611";
+}
+.radio-button + label:hover::before,
+.checkbox + label:hover::before{
+    color: #b5b5b5;
+}
+.radio-button:disabled + label::before,
+.checkbox:disabled + label::before{
+    color: #eaeaea;
+    cursor: default;
+}
+.radio-button:disabled + label,
+.checkbox:disabled + label,
+.radio-button:disabled + label:hover,
+.checkbox:disabled + label:hover{
+    color: #a9adaf;
+    cursor: default;
+}
+.filtr-grid label:hover,
+.filtr-features label:hover{
+    color: #000000;
+    cursor: pointer;
 }
 .price-from{
      float: left;
@@ -578,6 +629,20 @@ hr.divide{
 .filtr ul li{
     margin-bottom: 15px;
 }
+.show-filtr{
+    background-color: #f1f1f1;
+    color: #000;
+    font-weight:600;
+}
+.show-filtr:hover{
+    background-color: #e5e5e5;
+ }
+.show-filtr:active{
+    -webkit-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+    background-color: #d5d5d5;
+}
 .portfolio{
     float: right;
     width: 560px;
@@ -586,19 +651,26 @@ hr.divide{
     margin-bottom: 25px;
 }
 .sort-title{
-    float: left;
     margin-right: 35px;
     margin-top:0;
+    float: left;
+}
+.sort-option{
+    float: left;
+    margin:0;
+    padding:0;
+    list-style: none;
 }
 .top-down{
     float: right;
 }
-.sort-panel ul{
-    float: left;
-}
-.sort-panel ul li{
+
+.sort-option li{
     float: left;
     margin-right: 45px;
+}
+.sort-option li:last-child{
+    margin:0;
 }
 .portfolio-item{
     float: left;
