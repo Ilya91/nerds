@@ -760,9 +760,28 @@ hr.divide{
     width: 240px;
     position: relative;
     margin-bottom: 80px;
+    padding-top:30px;
+    background-color: #f1f1f1;
+    border-radius: 5px 5px 0 0;
+}
+.portfolio-item::after{
+    content: "•••";
+    position: absolute;
+    top:0px;
+    left:12px;
+    font-size:41px;
+    color: #fff;
+    line-height:28px;
+    letter-spacing: 3px;
+}
+.portfolio-item img{
+    display: block;
 }
 .portfolio-item:nth-child(2n){
     float: right;
+}
+.portfolio-item:hover{
+    background-color: #797979;
 }
 .portfolio-item:hover .overlay{
     display: block;
@@ -771,14 +790,35 @@ hr.divide{
     display: none;
     position: absolute;
     text-align: center;
-    top: 20px;
-    padding: 35px 30px 30px 30px;
+    left:20px;
+    top: 48px;
+    padding: 30px;
+    background-color: #fff;
+    width: 140px;
+    box-sizing: content-box;
+    min-height: 140px;
 }
 .overlay h3{
+    margin-top:0;
     margin-bottom:15px;
+    font-size:18px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:500;
 }
 .overlay p{
-    margin-bottom:30px;
+    margin-bottom:28px;
+    font-size:14px;
+    line-height:18px;
+    color: #283136;
+    font-weight:500;
+}
+.catalog-btn{
+    font-size:18px;
+    text-transform: uppercase;
+    box-sizing: content-box;
+    display: block;
+    padding:10px 10px;
 }
 ul.pagination li{
     float: left;
