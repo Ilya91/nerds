@@ -649,10 +649,15 @@ hr.divide{
 }
 .sort-panel{
     margin-bottom: 25px;
+    position: relative;
 }
 .sort-title{
     margin-right: 35px;
     margin-top:0;
+    color: #000;
+    font-size:12px;
+    line-height:22px;
+    text-transform: uppercase;
     float: left;
 }
 .sort-option{
@@ -660,14 +665,92 @@ hr.divide{
     margin:0;
     padding:0;
     list-style: none;
+    vertical-align: top;
 }
-.top-down{
+.catalog-arrow-block{
     float: right;
 }
-
+.catalog-arrow-down, .catalog-arrow-up{
+    margin-left:5px;
+}
+.catalog-arrow-down::before{
+    position: absolute;
+    right:15px;
+    top: 0;
+    font-family: symbols-nerds;
+    font-size:23px;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    color: #c1c1c1;
+    content: "\25bc";
+}
+.catalog-arrow-up::before{
+    position: absolute;
+    right:0;
+    top: 0;
+    font-family: symbols-nerds;
+    font-size:23px;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    color: #c1c1c1;
+    content: "\25b2";
+}
+.catalog-arrow-down:hover::before,
+.catalog-arrow-up:hover::before{
+    cursor: pointer;
+    color: #b5b5b5;
+}
+.catalog-arrow-down:active::before,
+.catalog-arrow-up:active::before,
+.catalog-arrow-active:active::before{
+    color: #000;
+}
+.catalog-arrow-active::before{
+    color: #00ca74;
+}
+.catalog-arrow-active:hover::before{
+    color: #00ca74;
+}
 .sort-option li{
-    float: left;
+    display: inline-block;
     margin-right: 45px;
+}
+.sort-option li a{
+    text-decoration: none;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight:500;
+    line-height:18px;
+    font-size:12px;
+    color: #b2b2b2;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 1px dotted #00ca74;
+}
+.sort-option li a:hover{
+    border-bottom: 1px solid #00ca74;
+    color: #000;
+}
+.sort-option li a:active{
+    border-bottom: none;
+    color: #000;
+}
+.sort-option li a.sort-option-active{
+    border-bottom: none;
+    color: #000;
 }
 .sort-option li:last-child{
     margin:0;
